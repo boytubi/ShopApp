@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShopApp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="facebook_app_id">477472649396324</string>
+    <string name="buyer_protection">Buyer Protection</string>
+    <string name="buyer_protection_detail">Returns accepted if product not as described, buyer pays return shipping fee; or keep the product and agree refund with seller.</string>
+    <string name="buyer_protection_time">On-time Delivery 60 days</string>
+    <string name="full_refund">Full refund if product is not received in 60 days</string>
+    <string name="action_settings">Action settings</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_share">Share</string>
+</resources>

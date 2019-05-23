@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <com.github.mzule.fantasyslide.FantasyDrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_header"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_16">
+
+                <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <ImageView
+                        android:id="@+id/imageExpand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:elevation="3dp"
+                        android:padding="@dimen/dp_10"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearSearch"
+                        app:layout_constraintEnd_toEndOf="@+id/linearSearch"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/linearSearch"
+                        app:layout_constraintTop_toTopOf="@+id/linearSearch"
+                        app:layout_constraintVertical_bias="0.466"
+                        app:srcCompat="@drawable/ic_dehaze_black_24dp" />
+
+                    <LinearLayout
+                        android:id="@+id/linearSearch"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:background="@drawable/bg_search"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/buttonSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@color/colorWhite"
+
+                            android:text="Search"
+                            android:textAllCaps="false"
+
+                            android:textColor="@color/colorGray" />
+
+                        <View
+                            android:layout_width="@dimen/dp_1"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@color/colorDarkBlue" />
+
+                        <ImageView
+                            android:id="@+id/imageViewCamera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/dp_10"
+                            app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+                    </LinearLayout>
+                    <!--<android.support.v7.widget.Toolbar-->
+                    <!--android:id="@+id/toolbar_menu"-->
+                    <!--android:layout_width="55dp"-->
+                    <!--android:layout_height="?attr/actionBarSize"-->
+                    <!--app:theme="@style/textColorMenu" />-->
+                    <include
+                        android:id="@+id/menucart"
+                        layout="@layout/menu_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/linearSearch"
+                        app:layout_constraintBottom_toBottomOf="@+id/linearSearch"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/linearSearch"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+
+
+                <!--<android.support.design.widget.TabLayout-->
+                    <!--android:id="@+id/tabLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:tabMode="scrollable"-->
+                    <!--app:tabTextAppearance="@style/capFalse"-->
+                    <!--app:tabTextColor="@color/colorGray" />-->
+            </LinearLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <com.github.mzule.fantasyslide.SideBar
+            android:id="@+id/sideBarLeft"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/bg_header"
+            android:forceHasOverlappingRendering="true"
+            android:gravity="center_vertical"
+            app:maxTranslationX="66dp">
+
+            <LinearLayout
+                android:id="@+id/linearUserInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/circleImageUser"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/imageuser"
+                    app:civ_border_color="@drawable/menu_text_color"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/textViewUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@drawable/menu_text_color"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewNotification"
+                style="@style/MenuText"
+
+                android:drawableLeft="@drawable/ic_notifications_black_24dp"
+                android:text="Notification" />
+
+            <TextView
+                android:id="@+id/textViewFavorites"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/ic_favorite_border_white_24dp"
+                android:text="Favorites"
+
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearMyCart">
+
+                <TextView
+                    android:id="@+id/textViewMyOrder"
+                    style="@style/MenuText"
+                    android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
+                    android:text="Shopping Cart"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textViewCartMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart"
+                    android:gravity="center"
+                    android:text="1"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/sp_10"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewSettings"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/ic_settings_black_24dp"
+                android:text="Settings" />
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/textViewLogout"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/ic_settings_power_black_24dp"
+                android:text="Logout"
+                android:visibility="gone" />
+        </com.github.mzule.fantasyslide.SideBar>
+    </com.github.mzule.fantasyslide.FantasyDrawerLayout>
+
+    <!--<ExpandableListView-->
+    <!--android:id="@+id/expandable_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:dividerHeight="1dp"-->
+    <!--android:choiceMode="multipleChoice"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"/>-->
+    <!--<android.support.design.widget.NavigationView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--app:itemIconTint="@color/colorDarkBlue"-->
+    <!--app:itemTextColor="@color/colorDarkBlue"-->
+    <!--app:menu="@menu/menu_main"-->
+    <!--app:headerLayout="@layout/header_drawer"/>-->
+
+
+</LinearLayout>

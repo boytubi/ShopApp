@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+    <!-- Text Color Menu -->
+    <style name="textColorMenu" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="drawerArrowStyle">@style/colorDrawerToggle</item>
+    </style>
+
+    <!-- Color Drawer Toggle -->
+    <style name="colorDrawerToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+    <!-- Base theme No Action Bar -->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+    </style>
+
+    <!-- All Caps -->
+    <style name="capFalse" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="TextAppearance.Text.Regular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/sourcesanspro/SourceSansProRegular.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Text.Bold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/sourcesanspro/SourceSansProBold.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Text.Light" parent="android:TextAppearance">
+        <item name="fontPath">fonts/sourcesanspro/SourceSansProLight.ttf</item>
+    </style>
+
+    <style name="TextAppearance.Text.Italic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/sourcesanspro/SourceSansProItalic.ttf</item>
+    </style>
+    <style name="TextStyle">
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <!--Heading-->
+    <style name="TextStyle.Heading" parent="TextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Text.Bold</item>
+    </style>
+    <style name="TextAppearance.App.TextInputLayout" parent="android:style/TextAppearance">
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+    <style name="TextStyle.EditText" parent="TextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.Text.Regular</item>
+    </style>
+    <style name="Button" parent="Widget.AppCompat.Button">
+       <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name= "android:background">@drawable/button_bg</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+    </style>
+
+    <style name="Button.Primary" parent="Button">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/button_primary_bg</item>
+    </style>
+    <style name="Button.SignUp" parent="Button">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorTransparent</item>
+    </style>
+
+    <style name="ChangeStarRating" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorOrange1 </item>
+
+    </style>
+    // Display in activity parent
+    <style name="NoTitleDialog" parent="@style/Base.Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    
+    <style name="MenuText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/menu_text_color</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+                  <item android:id="@+id/itemLogin"
+                        android:icon="@drawable/ic_person_black_24dp"
+                        android:title="Login"/>
+                  <item android:id="@+id/itemNotification"
+                        android:icon="@drawable/ic_notifications_black_24dp"
+                        android:title="Notification"/>
+                  <item android:id="@+id/itemFavorite"
+                        android:icon="@drawable/ic_favorite_border_black_24dp"
+                        android:title="List Favorites"/>
+                  <item android:id="@+id/itemOrder"
+                        android:icon="@drawable/ic_order_black_24dp"
+                        android:title="My Order"/>
+
+                  <item android:id="@+id/itemSetting"
+                        android:icon="@drawable/ic_settings_black_24dp"
+                        android:title="Settings"/>
+                  <item android:id="@+id/itemPolicy"
+                        android:icon="@drawable/ic_policy_black_24dp"
+                        android:title="Policy"/>
+                  <item android:id="@+id/itemHelp"
+                        android:icon="@drawable/ic_live_help_black_24dp"
+                        android:title="Help"/>
+                  <item android:id="@+id/itemLogout"
+                      android:icon="@drawable/ic_settings_power_black_24dp"
+                      android:title="Sign out"
+                      android:visible="false"/>
+
+</menu>
